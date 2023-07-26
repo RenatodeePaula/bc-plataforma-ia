@@ -1,0 +1,119 @@
+/* =================GERAL============================ */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    display: flex;
+    justify-content: center;
+    font-family: 'IBM Plex Sans', sans-serif;
+    background-image: url(./assets/bg.png) ;
+    background-repeat: no-repeat;
+    background-size: cover;
+    
+    width: 100%;
+    height: 100vh;
+
+    color: var(--gray-01, #F8FAFC);  
+}
+
+:root {
+	--color-gray-01: #f8fafc;
+	--color-gray-02: #e2e8f0;
+	--color-gray-03: #94a3b8;
+	--color-gray-04: #334155;
+	--color-gray-05: #1e293b;
+	--color-gray-06: #0f172a;
+	--color-gray-07: #020617;
+}
+
+main {
+    border: 1px solid green;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+
+}
+
+#container {    
+    display: flex;
+    flex-direction: column;
+    align-items: center; 
+    
+    padding: 60px;
+    border-radius: 32px;
+    border: 1px solid var(--gray-04);
+    background: rgba(2, 6, 23, 0.80);
+    
+    width: 100%;
+    height: 100vh;
+}
+
+/* =================TOP========================= */
+.top {
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    justify-content: center;
+    gap: 24px;
+}
+
+header {
+    display: flex;
+    align-items: center;   
+    justify-content: center;     
+    
+    padding: 12px;
+
+    border-radius: 16px;
+    background: var(--gray-06, #0F172A);   
+}
+
+.title h1 {
+    color: var(--gray-01, #F8FAFC);   
+    font-size: 32px;  
+    font-weight: 600;    
+}
+
+/* =================IA-TOOLS============================ */
+
+.ia-tools {
+    display: flex;
+    flex-direction: column;
+    gap: 16px;
+    border: 1px solid red;
+    width: 608px;
+ 
+    padding: 16px;
+}
+
+.tools {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 16px;
+
+    width: 100%;
+    border-radius: 16px;
+    border: 1px solid var(--gray-04, #334155);
+    background: var(--gray-06, #0F172A);
+}
+
+.tools div:first-child {
+    display: flex;
+    align-items: center;
+    gap: 24px;
+
+    
+}
+
+.icon {
+    padding: 16px;
+
+    border-radius: 16px;
+    border: 1px solid var(--gray-05, #1E293B);
+    background: var(--gray-06, #0F172A);
+}

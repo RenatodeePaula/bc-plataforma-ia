@@ -17,16 +17,18 @@
 <body>  
     <main>
         <div id="container">
-            <header>
-                <div>
-                    <img src="./assets/magic-wand.svg" alt="">
-                </div>
-            </header>
-            
-            <section class="title">
-                <h1>Experimente o poder da Inteligência Artificial </h1>
-            </section>
-
+            <div class="top">
+                <header>
+                    <div>
+                        <img src="./assets/magic-wand.svg" alt="">
+                    </div>
+                </header>
+                
+                <section class="title">
+                    <h1>Experimente o poder da Inteligência Artificial </h1>
+                </section>
+            </div>                
+                
             <section class="ia-tools">
                 <div class="tools">
                     <div>
@@ -35,7 +37,7 @@
                         </div>
                         <p>Gerador de códigos</p>
                     </div>
-                    <div class="arrow">
+                    <div class="icon">
                         <i class="ph ph-arrow-right"></i>
                     </div>
                 </div>
@@ -47,7 +49,7 @@
                         </div>
                         <p>Edição de foto</p>
                     </div>
-                    <div class="arrow">
+                    <div class="icon">
                         <i class="ph ph-arrow-right"></i>
                     </div>
                 </div>
@@ -59,7 +61,7 @@
                         </div>
                         <p>Geração de vídeos</p>
                     </div>
-                    <div class="arrow">
+                    <div class="icon">
                         <i class="ph ph-arrow-right"></i>                       
                     </div>
                 </div>
@@ -71,12 +73,24 @@
                         </div>
                         <p>Criador de áudios e musicas</p>
                     </div>
-                    <div class="arrow">
+                    <div class="icon">
                         <i class="ph ph-arrow-right"></i>
                     </div>
-                </div>
-               
+                </div>               
 
+            </section>
+            <hr>
+
+            <section class="prompt">
+                <div>
+                    <div class="input-icon">
+                        <i class="ph ph-plus-circle"></i>
+                    </div>
+                    <input type="text" placeholder="Envie uma mensagem ou digite “/” para exibir os comandos" autocomplete="none">
+                    <button class="send">
+                        <i class="ph ph-paper-plane-right"></i>
+                    </button>
+                </div>
             </section>
         </div>
     </main>
