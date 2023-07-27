@@ -14,7 +14,6 @@ body {
     background-size: cover;
     
     width: 100%;
-    height: 100vh;
 
     color: var(--gray-01, #F8FAFC);  
 }
@@ -30,7 +29,6 @@ body {
 }
 
 main {
-    border: 1px solid green;
     display: flex;
     flex-direction: column;
     align-items: center;
@@ -49,7 +47,6 @@ main {
     background: rgba(2, 6, 23, 0.80);
     
     width: 100%;
-    height: 100vh;
 }
 
 /* =================TOP========================= */
@@ -84,7 +81,6 @@ header {
     display: flex;
     flex-direction: column;
     gap: 16px;
-    border: 1px solid red;
     width: 608px;
  
     padding: 16px;
@@ -105,9 +101,7 @@ header {
 .tools div:first-child {
     display: flex;
     align-items: center;
-    gap: 24px;
-
-    
+    gap: 24px;   
 }
 
 .icon {
@@ -116,4 +110,29 @@ header {
     border-radius: 16px;
     border: 1px solid var(--gray-05, #1E293B);
     background: var(--gray-06, #0F172A);
+}
+
+hr {
+    background-color: var(--color-gray-04);       
+}
+
+.prompt {
+    display: flex;
+    
+    width: 1016px;
+    gap: 16px;
+    padding: 16px;
+
+    border-radius: 16px;
+    border: 1px solid var(--gray-04, #334155);
+    background: var(--gray-06, #0F172A);
+}
+
+.prompt input {
+    width: 100%;
+    color: var(--gray-02, #E2E8F0);
+    font-size: 18px;
+    font-weight: 400;
+    background-color: var(--gray-06, #0F172A) ;
+    border: none;
 }
