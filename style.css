@@ -7,14 +7,16 @@
 
 body {
     display: flex;
-    justify-content: center;
+    justify-content: flex-start;   
+    align-items: center;
+    flex-direction: column;
+
     font-family: 'IBM Plex Sans', sans-serif;
     background-image: url(./assets/bg.png) ;
     background-repeat: no-repeat;
     background-size: cover;
     
-    width: 100%;
-
+    margin: 67px 112px;
     color: var(--gray-01, #F8FAFC);  
 }
 
@@ -30,23 +32,20 @@ body {
 
 main {
     display: flex;
-    flex-direction: column;
-    align-items: center;
-    justify-content: center;
-
+    flex-direction: column;    
+    justify-content: center;   
 }
 
 #container {    
     display: flex;
     flex-direction: column;
     align-items: center; 
+    gap: 40px;
     
     padding: 60px;
     border-radius: 32px;
     border: 1px solid var(--gray-04);
-    background: rgba(2, 6, 23, 0.80);
-    
-    width: 100%;
+    background: rgba(2, 6, 23, 0.80);   
 }
 
 /* =================TOP========================= */
@@ -56,6 +55,7 @@ main {
     flex-direction: column;
     justify-content: center;
     gap: 24px;
+    
 }
 
 header {
@@ -111,28 +111,61 @@ header {
     border: 1px solid var(--gray-05, #1E293B);
     background: var(--gray-06, #0F172A);
 }
+.icon i {
+    color: var(--color-gray-03);
+    font-size: 32px;
 
-hr {
-    background-color: var(--color-gray-04);       
+}
+
+.divider {
+    background-color: red;    
+    width: 1096px;      
+}
+
+.wrapper-prompt {
+    display: flex;
+    width: 100%;
+    gap: 16px;
 }
 
 .prompt {
     display: flex;
-    
-    width: 1016px;
     gap: 16px;
+    align-items: center;
     padding: 16px;
+    
+    width: 100%;
+    
+    border-radius: 16px;
+    border: 1px solid var(--gray-04, #334155);
+    background: var(--gray-06, #0F172A);
 
+}
+.input-icon {
+    display: flex;
+    gap: 16px;
+}
+.prompt input {   
+    width: 100%;
+    color: var(--gray-02, #E2E8F0);
+    font-size: 18px;
+    font-weight: 400;
+    background-color: var(--gray-02) ;
+    border: none;
+}
+
+.prompt i {
+    font-size: 32px;
+    color: var(--color-gray-03);
+}
+.send {
+    padding: 16px;
     border-radius: 16px;
     border: 1px solid var(--gray-04, #334155);
     background: var(--gray-06, #0F172A);
 }
 
-.prompt input {
-    width: 100%;
-    color: var(--gray-02, #E2E8F0);
-    font-size: 18px;
-    font-weight: 400;
-    background-color: var(--gray-06, #0F172A) ;
-    border: none;
+.send i {
+    color: var(--color-gray-01);
+    font-size: 32px;
 }
